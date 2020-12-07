@@ -27,7 +27,7 @@ public class Application {
 			switch(method1) {
 				//côté Pharmacien
 				case "1" :
-					System.out.println("côté Pharmacien \n Gestion Pharmacien : 1 \n Gestion Medicament : 2");
+					System.out.println("Côté Pharmacien \n Gestion Pharmacien : 1 \n Gestion Medicament : 2");
 					String method2=scan.next();
 					//String choix1="";
 					switch(method2) {
@@ -45,7 +45,7 @@ public class Application {
 									 prenom= scan.next();
 									 System.out.println("entrer le Telephone de Pharmacien");
 									 telephone= scan.next();
-									 System.out.println("entrer le Email de Pharmacien");
+									 System.out.println("entrer l'Email de Pharmacien");
 									 email= scan.next();
 									 pharmcn=  new Pharmacien(Nom,prenom,telephone,email);
 									 pharmcn.AjouterePharmacien(pharmcn, ListPharmacien);
@@ -63,34 +63,34 @@ public class Application {
 										prenom= scan.next();
 										System.out.println("entrer le Telephone de  Pharmacien");
 										telephone= scan.next();
-										System.out.println("entrer le Email de  etudient");
+										System.out.println("entrer l'Email de  etudient");
 										email= scan.next();
 										//appel method modifierEtudient
 										pharmcn.modifierPharmacien(ListPharmacien, id, Nom,prenom,telephone,email);
 						  		  		System.out.println(" PharmacienS " + ListPharmacien);
 						    			
 						    		}else {
-				  						System.out.println("PharmacienS vide Ajouter des PharmacienS");
+				  						System.out.println("Pharmacienes vide Ajouter des Pharmacienes");
 				  					}
 						    		break;
 						    		
 					    		//supprimer Pharmacien
 						    	case "3":
 						    		if(ListPharmacien.size()>0) {
-				  			  			System.out.println("les Pharmacien  : \n " + ListPharmacien); 
-				  			  			System.out.println("entrer l id quel dois supprimer ");
+				  			  			System.out.println("les Pharmacienes  : \n " + ListPharmacien); 
+				  			  			System.out.println("entrer l'id quel dois supprimer ");
 				  			  			id= scan.nextInt();
 				  			  			
 				  			  			pharmcn.supprimerPharmacien(ListPharmacien,id);
 				  			  		}else {
-				  			  			System.out.println("Pharmacien vide Ajouter des Pharmaciens");
+				  			  			System.out.println("Pharmacienes vide Ajouter des Pharmacienes");
 				  			  		}
 				  					break;
 				  				//cherche Pharmacien
 						    	case "4":
 						    		if(ListPharmacien.size()>0) {
-						    			System.out.println("les Medicaments  : \n " + ListPharmacien); 
-						    			System.out.println("entrer l id quel dois cherche ");
+						    			System.out.println("les Medicamentes  : \n " + ListPharmacien); 
+						    			System.out.println("entrer l'id quel dois chercher ");
 						  				id= scan.nextInt();
 						  				
 										//appel method chercheMedicament
@@ -115,7 +115,7 @@ public class Application {
 						    	case "1":
 						    		 System.out.println("entrer le Nom de Medicament");
 									 Nom= scan.next();
-									 System.out.println("entrer le Description de Medicament");
+									 System.out.println("entrer la Description de Medicament");
 									 description= scan.next();
 									 System.out.println("entrer le Prix de Medicament");
 									 prix= scan.next();
@@ -128,11 +128,11 @@ public class Application {
 						    	case "2":
 						    		if(ListMedicament.size()>0) {
 						    			System.out.println("les Pharmacien  : \n " + ListMedicament); 
-						    			System.out.println("entrer l id quel dois modifier ");
+						    			System.out.println("entrer l'id quel dois modifier ");
 						  				id= scan.nextInt();
 						  				System.out.println("entrer le Nom de  Medicament");
 										Nom= scan.next();
-										System.out.println("entrer le Description de  Medicament");
+										System.out.println("entrer la Description de  Medicament");
 										description= scan.next();
 										System.out.println("entrer le Prix de  Medicament");
 										prix= scan.next();
@@ -149,7 +149,7 @@ public class Application {
 						    	case "3":
 						    		if(ListMedicament.size()>0) {
 				  			  			System.out.println("les Medicament  : \n " + ListMedicament); 
-				  			  			System.out.println("entrer l id quel dois supprimer ");
+				  			  			System.out.println("entrer l'id quel dois supprimer ");
 				  			  			id= scan.nextInt();
 				  			  			
 				  			  			mdcmnt.supprimerMedicament(ListMedicament,id);
@@ -162,7 +162,7 @@ public class Application {
 						    	case "4":
 						    		if(ListMedicament.size()>0) {
 						    			System.out.println("les Medicaments  : \n " + ListMedicament); 
-						    			System.out.println("entrer l id quel dois cherche ");
+						    			System.out.println("entrer l'id quel dois chercher ");
 						  				id= scan.nextInt();
 						  				
 										//appel method chercheMedicament
@@ -181,13 +181,13 @@ public class Application {
 					break;
 				//côté Client
 				case "2" :
-					System.out.println(" côté Client \n les Medicament  : \n " + ListMedicament + "\n Cherche une Medicament   -> 1 \n");
+					System.out.println(" Côté Client \n les Medicament  : \n " + ListMedicament + "\n Cherche une Medicament   -> 1 \n");
 					choix1= scan.next();
 					switch (choix1) {
 						case "1":
 							if(ListMedicament.size()>0) {
 				    			System.out.println("les Medicaments  : \n " + ListMedicament); 
-				    			System.out.println("entrer l id quel dois cherche ");
+				    			System.out.println("entrer l'id quel dois cherche ");
 				  				id= scan.nextInt();
 				  				
 								//appel method chercheMedicament
@@ -203,7 +203,7 @@ public class Application {
 											 Nom= scan.next();
 											 System.out.println("entrer le Prenom de Client");
 											 prenom= scan.next();
-											 System.out.println("entrer le Email de Client");
+											 System.out.println("entrer l'Email de Client");
 											 email= scan.next();
 											 System.out.println("entrer le Telephone de Client");
 											 telephone= scan.next();
@@ -219,16 +219,16 @@ public class Application {
 												}
 											 }
 											 if ( bdg == 0) {
-												 System.out.println(" \n bdg == 0  Wolcam client \n");
+												 System.out.println(" \n Wolcam client   | nombre d'achat = 0\n");
 												 Clnt =  new Client(Nom,prenom,email,telephone,badge);
 												 Clnt.AjoutereClient(Clnt, ListClient);
-												 System.out.println("\n achat avec succes");
+												 System.out.println("\n Achat avec succes");
 											 }else if(bdg < 3) {
-												 System.out.println(" \n nombre d'achat :" + bdg);
-												 System.out.println("\n achat avec succes");
+												 System.out.println(" \n Nombre d'achat :" + bdg);
+												 System.out.println("\n Achat avec succes");
 											 }else {
-												 System.out.println(" \n nombre d'achat : " + bdg + " | tu es client fidèle");
-												 System.out.println("\n achat avec succes");
+												 System.out.println(" \n Nombre d'achat : " + bdg + " | tu es client fidèle");
+												 System.out.println("\n Achat avec succes");
 											 }
 
 											 break;
@@ -237,7 +237,7 @@ public class Application {
 								}
 								
 				    		}else {
-		  						System.out.println("Medicaments vide Ajouter des Medicaments");
+		  						System.out.println("Medicamentes vide Ajouter des Medicamentes");
 		  					}
 				    		break;
 				    	default:

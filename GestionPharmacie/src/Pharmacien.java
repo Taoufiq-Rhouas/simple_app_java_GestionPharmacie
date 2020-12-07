@@ -1,10 +1,6 @@
 
 import java.util.ArrayList;
 
-//import brif2Bibliothéque.etudiant;
-
-//import brif2Bibliothéque.etudiant;
-
 public class Pharmacien {
 	
 	private static int count=1;

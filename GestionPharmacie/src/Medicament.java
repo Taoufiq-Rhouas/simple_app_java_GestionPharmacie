@@ -53,8 +53,6 @@ public class Medicament {
 		mdcmnt.add(medicament);
 		System.out.println("Ajouter Pharmacien avec succes  :" + mdcmnt);
 	}
-	
-
 
 	//Modifier Medicament
 	public void modifierMedicament(ArrayList<Medicament> ListMedicament, int id, String Nom,String description,String prix) {

@@ -29,11 +29,10 @@ public class Client extends Pharmacien {
 		this.badge = badge;
 	}
 
-
 	
 	@Override
 	public String toString() {
-		//return "[" + this.id + "," + super.toString() + "," + this.nombrAchat + "," + this.badge + "]";
+		//return "[" + this.id + "," + super.toString() + "," + this.badge + "]";
 		return  super.toString() + "," + this.badge + "]";
 	}
 	
@@ -43,8 +42,6 @@ public class Client extends Pharmacien {
 		Clnt.add(client);
 		System.out.println("Ajouter Client avec succes  :" + Clnt);
 	}
-
-
 	
 	//Modifier Client
 		public void mmClient(ArrayList<Client> ListClient, String Nom,String prenom,String email,String telephone,int badge,Client client) {
