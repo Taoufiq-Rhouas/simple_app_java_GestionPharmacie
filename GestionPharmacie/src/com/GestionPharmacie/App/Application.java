@@ -31,7 +31,6 @@ public class Application {
 		while (true) {
 			System.out.println(" côté Pharmacien : 1 \n côté client     : 2");
 			String method1 = scan.next();
-			// String method2=scan.next();
 			String choix1 = "";
 			String choix2 = "";
 			switch (method1) {

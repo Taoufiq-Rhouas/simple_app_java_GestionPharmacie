@@ -39,7 +39,6 @@ public class Client extends Persone {
 
 	@Override
 	public String toString() {
-		// return "[" + this.id + "," + super.toString() + "," + this.badge + "]";
 		return super.toString() + "," + this.badge + "]";
 	}
 
@@ -55,7 +54,6 @@ public class Client extends Persone {
 			int badge, Client client) {
 
 		int numbadge = 0;
-
 		int a;
 		int bdg = 0;
 		int bdg2 = 0;
@@ -63,7 +61,6 @@ public class Client extends Persone {
 		for (int j = 0; j < ListClient.size(); j++) {
 			if (Nom == ListClient.get(j).getNom()) {
 				bdg = ListClient.get(j).getBadge();
-				// bdg = bdg + 1;
 				bdg++;
 				ListClient.get(j).setBadge(bdg);
 				// a = 1;
@@ -91,8 +88,6 @@ public class Client extends Persone {
 				ListClient.get(j).setPrenom(prenom);
 				ListClient.get(j).setEmail(email);
 				ListClient.get(j).setTelephone(telephone);
-				// ListClient.get(j).setNombrAchat(nombrAchat);
-				// ListClient.get(j).setBadge(badge);
 				System.out
 						.println("Modifier avec succes id =" + id + " and Clients : \n" + ListClient.get(j).toString());
 			} else {
